@@ -1,6 +1,6 @@
 # Image to Header File Converter for Arduino
 
-This project provides a simple tool to convert images into C/C++ header files that can be used with Arduino.\
+The project provides a simple tool to convert images into C/C++ header files that can be used with Arduino.\
 The generated header file contains the image data in a format suitable for rendering on displays such as OLED, TFT, or other graphical LCDs.
 
 ## Features
@@ -33,9 +33,9 @@ The generated header file contains the image data in a format suitable for rende
    #include "output.h"
    ```
 4. **Animated header:**\
-   to use this you need a split video for this purpose, use [ezgif](https://ezgif.com) then split.
+   to use this you need a split GIF for this purpose, use [ezgif](https://ezgif.com) then split.\
    now extract the folder, then use that folder you want to animate.
-   use this method to make it animated in you project:
+   use this method to make it animated in your Arduino project:
    ```
    void loop() {
      for (uint8_t i = 0; i < NUM_IMAGES; i++) {
@@ -44,3 +44,6 @@ The generated header file contains the image data in a format suitable for rende
      }
    }
    ```
+
+> [!IMPORTANT]
+> There is still a missing or mismatch about app and description
