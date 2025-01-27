@@ -33,9 +33,9 @@ The generated header file contains the image data in a format suitable for rende
    #include "output.h"
    ```
 4. **Animated header:**\
-   to use this you need a split GIF for this purpose, use [ezgif](https://ezgif.com) then split.\
-   now extract the folder, then use that folder you want to animate.
-   use this method to make it animated in your Arduino project:
+   You need a split GIF for this purpose, use [ezgif](https://ezgif.com) then split.\
+   now extract the folder, then use that folder you want to animate.\
+   use this method to animate your Arduino display project:
    ```
    void loop() {
      for (uint8_t i = 0; i < NUM_IMAGES; i++) {
@@ -46,4 +46,4 @@ The generated header file contains the image data in a format suitable for rende
    ```
 
 > [!IMPORTANT]
-> There is still a missing or mismatch about app and description
+> There is still a missing or mismatch between the app and description details
