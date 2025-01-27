@@ -27,3 +27,20 @@ The generated header file contains the image data in a format suitable for rende
    - `Size`: set the screen size of your project.
    - `Output name`: set the name for the header file or output.
    - `Choose format`: set the format colour to use (e.g., `B&W`, `RGB565`, `RGB888`).
+3. Include the header file in your project:
+   copy the generated `output.h` file into your Arduino project directory and include it in your sketch:
+   ```
+   #include "output.h"
+   ```
+4. Animated header:
+   to use this you need a split video for this purpose, use [ezgif](https://ezgif.com) then split.
+   now extract the folder, then use that folder you want to animate.
+   use this method to make it animated in you project:
+   ```
+   void loop() {
+     for (uint8_t i = 0; i < NUM_IMAGES; i++) {
+       tft.display.pushImage(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT, images[i]);
+       delay(80); // adjust the speed
+     }
+   }
+   ```
