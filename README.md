@@ -14,7 +14,7 @@ The generated header file contains the image data in a format suitable for rende
 
 ## Usage
 
-1. Install dependencies:\
+1. **Install dependencies:**\
    Ensure you have Python 3.x or latest. Then, install the required library:
    ```
    pip install pyqt5
@@ -22,17 +22,17 @@ The generated header file contains the image data in a format suitable for rende
    ```
    or for a faster method just run the `run.bat` file instead
 
-2. Run:\
+2. **Run:**\
    After running you can specify the option to customize the output:
    - `Size`: set the screen size of your project.
    - `Output name`: set the name for the header file or output.
    - `Choose format`: set the format colour to use (e.g., `B&W`, `RGB565`, `RGB888`).
-3. Include the header file in your project:\
+3. **Include the header file in your project:**\
    copy the generated `output.h` file into your Arduino project directory and include it in your sketch:
    ```
    #include "output.h"
    ```
-4. Animated header:\
+4. **Animated header:**\
    to use this you need a split video for this purpose, use [ezgif](https://ezgif.com) then split.
    now extract the folder, then use that folder you want to animate.
    use this method to make it animated in you project:
